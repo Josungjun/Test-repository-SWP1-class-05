@@ -1,2 +1,2 @@
 # 20203143    Sungjun JO
-# Kookmin.Univ. SW
+# Kookmin.Univ. Computer Science
