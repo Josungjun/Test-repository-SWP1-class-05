@@ -8,7 +8,7 @@ def application(environ, start_response):
     SUM = 0
     Mul = 0
 
-    if '' not in [a, b] :
+    if a.isdigit() and b.isdigit():
         a, b,  = int(a), int(b) 
         SUM = a + b
         Mul = a * b
