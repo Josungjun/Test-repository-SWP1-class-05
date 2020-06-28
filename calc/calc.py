@@ -7,11 +7,14 @@ def application(environ, start_response):
     b = d.get('b', [''])[0]
     SUM = 0
     Mul = 0
-
-    if a.isdigit() and b.isdigit():
+     
+    try:
         a, b,  = int(a), int(b) 
         SUM = a + b
         Mul = a * b
+    except:
+        SUM = -1
+        Mul = -1
     response_body = html%{
     'SUM': SUM,
     'Mul': Mul,
