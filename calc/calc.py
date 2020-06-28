@@ -12,9 +12,11 @@ def application(environ, start_response):
         a, b,  = int(a), int(b) 
         SUM = a + b
         Mul = a * b
+   
     except:
-        SUM = -1
-        Mul = -1
+        SUM = "sorry we can't deal with string"
+        Mul = "please only input number"
+
     response_body = html%{
     'SUM': SUM,
     'Mul': Mul,
